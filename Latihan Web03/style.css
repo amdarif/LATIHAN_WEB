@@ -1,0 +1,359 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 610px;
+    margin: 40px auto;
+    border: 1px solid #d4a329;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 90px;
+    background-color: #ffe5c7;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 55px;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 70px;
+    height: 70px;
+
+    border: 2px solid #666;
+    border-radius: 50%;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 18px;
+
+    font-size: 14px;
+}
+
+.menu div {
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 237px;
+
+    background-color: #d9e7fb;
+
+    border-top: 1px solid #8ba8d1;
+    border-bottom: 1px solid #8ba8d1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    font-size: 14px;
+}
+
+
+/* SERVICES */
+
+.services {
+    height: 300px;
+    background-color: #fff1c9;
+
+    padding-top: 24px;
+}
+
+
+/* BUTTON SECTION */
+
+.section-button {
+    width: 120px;
+    height: 64px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    border: 2px solid #777;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+
+/* SERVICE CONTENT */
+
+.service-content {
+    display: flex;
+
+    width: 490px;
+    margin: 30px auto 0;
+
+    justify-content: space-between;
+}
+
+.service-box {
+    width: 130px;
+}
+
+.service-box h2 {
+    margin: 0 0 18px;
+
+    font-size: 27px;
+    color: #111;
+}
+
+.service-box p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+/* ABOUT */
+
+.about {
+    height: 320px;
+
+    background-color: #e3d8ec;
+
+    border-top: 1px solid #a78bb8;
+    border-bottom: 1px solid #a78bb8;
+
+    padding-top: 32px;
+}
+
+
+/* ABOUT DESCRIPTION */
+
+.about-description {
+    width: 490px;
+
+    margin: 32px auto 0;
+
+    font-size: 14px;
+}
+
+
+/* ABOUT CONTENT */
+
+.about-content {
+    width: 490px;
+
+    margin: 26px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 210px;
+}
+
+.about-text h2,
+.performance h2 {
+    margin: 0 0 20px;
+
+    font-size: 27px;
+    color: #111;
+}
+
+.about-text p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+/* PERFORMANCE */
+
+.performance {
+    width: 240px;
+}
+
+
+/* WAVE */
+
+.wave {
+    width: 195px;
+    height: 65px;
+
+    margin-top: 5px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.wave::before {
+    content: "";
+
+    position: absolute;
+
+    width: 195px;
+    height: 65px;
+
+    background-color: white;
+
+    border: 2px solid #777;
+
+    clip-path: polygon(
+        0% 25%,
+        10% 35%,
+        20% 40%,
+        30% 40%,
+        40% 35%,
+        50% 25%,
+        60% 15%,
+        70% 10%,
+        80% 10%,
+        90% 15%,
+        100% 25%,
+        100% 75%,
+        90% 65%,
+        80% 60%,
+        70% 60%,
+        60% 65%,
+        50% 75%,
+        40% 85%,
+        30% 90%,
+        20% 90%,
+        10% 85%,
+        0% 75%
+    );
+}
+
+
+/* CONTACT */
+
+.contact {
+    height: 270px;
+
+    background-color: #d9ecd3;
+
+    padding-top: 22px;
+
+    border-bottom: 1px solid #8db27e;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    width: 505px;
+    margin: 10px auto 0;
+}
+
+
+/* INPUT */
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-row input {
+    width: 238px;
+    height: 24px;
+
+    border: 2px solid #777;
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+
+/* TEXTAREA */
+
+.message {
+    margin-top: 21px;
+}
+
+.message textarea {
+    width: 505px;
+    height: 80px;
+
+    resize: none;
+
+    border: 2px solid #777;
+    border-radius: 12px;
+
+    background-color: white;
+}
+
+
+/* KIRIM */
+
+.send {
+    margin-top: 10px;
+}
+
+.send button {
+    width: 125px;
+    height: 24px;
+
+    border: 1px solid #777;
+    border-radius: 4px;
+
+    background-color: #0759df;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer {
+    height: 56px;
+
+    background-color: #ffe5c7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+}
