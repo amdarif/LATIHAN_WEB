@@ -1,159 +1,213 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Web03</title>
+<html>
+    <head>
+        <title>Latihan Web03</title>
+        <style>
+            .box{
+                width: 100%;
+                margin: auto;
+            }
+            .header{
+                width: 100%;
+                height: 220px;
+                background-color: #fde39d;
+                border: 5px solid #e7bc46;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 50px;
+                box-sizing: border-box;
+            }
+            .logo{
+                width: 150px;          /* Lebar lingkaran */
+                height: 150px;         /* Tinggi harus sama dengan lebar */
+                border: 1px solid #000; /* Garis tepi hitam tipis */
+                border-radius: 50%;   /* Mengubah kotak menjadi lingkaran */
+                display: flex;
+                align-items: center;  /* Teks tengah secara vertikal */
+                justify-content: center; /* Teks tengah secara horizontal */
+                background-color: white;
+                font-size: 30px;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+                font-size: 30px; 
+            }
+            .hero{
+                width: 100%;
+                height: 660px;
+                background-color: #85c4f3;
+                border: 5px solid #3388ff;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                box-sizing: border-box;
+                font-size: 30px; 
+            }
+            .service{
+                width: 100%;
+                height: 660px;
+                background-color: #fae882;
+                border: 5px solid #f4b908;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:center;
+                box-sizing: border-box;
+                font-size: 50px; 
+            }
+            .box-head{
+                width: 400px;
+                height: 200px;
+                border-radius: 10%;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                border: 1px solid #000;
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+            }
+            .konten-service{
+                gap: 100px;
+                display: flex;
+                flex-direction: row;
+                box-sizing: border-box;
+                padding: 0 200px;
+                font-size: 30px;
+                text-align: justify;
+                padding-top: 50px;
+            }
+            .about{
+                width: 100%;
+                height: 770px;
+                background-color: #c684e2;
+                border: 5px solid #d514fc;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:center;
+                box-sizing: border-box;
+                font-size: 50px; 
+                padding-top: 50px;
+                
+            }
+            .konten-about{
+                gap: 100px;
+                display: flex;
+                flex-direction: row;
+                box-sizing: border-box;
+                padding: 0 200px;
+                font-size: 30px;
+                text-align: justify;
+                padding-top: 0px;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        </style>
+    </head>
 
-    <div class="container">
 
-        <!-- HEADER -->
-        <div class="header">
-
-            <div class="logo">
-                Logo
-            </div>
-
-            <div class="menu">
-                <div>Home</div>
-                <div>Services</div>
-                <div>About</div>
-                <div>Contact</div>
-            </div>
-
-        </div>
-
-
-        <!-- HERO -->
-        <div class="hero">
-            <div class="hero-text">
-                Hero (Image, Slogan, Kontak, dll)
-            </div>
-        </div>
-
-
-        <!-- SERVICES -->
-        <div class="services">
-
-            <div class="section-button">
-                Services
-            </div>
-
-            <div class="service-content">
-
-                <div class="service-box">
-                    <h2>Heading</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed
-                        do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
+    <body>
+        <div class="box">
+            <div class="header">
+                <div class="logo">
+                    logo
                 </div>
-
-                <div class="service-box">
-                    <h2>Heading</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed
-                        do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
+                <div class="menu">
+                    <div>Home</div>
+                    <div>Services</div>
+                    <div>About</div>
+                    <div>Contact</div>
                 </div>
-
-                <div class="service-box">
-                    <h2>Heading</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed
-                        do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
+            </div>
+             <div class="hero">
+                <div>
+                    Hero (Image, Slogan, Kontak, dll)
                 </div>
-
             </div>
-
-        </div>
-
-
-        <!-- ABOUT -->
-        <div class="about">
-
-            <div class="section-button">
-                About
-            </div>
-
-            <div class="about-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod
-            </div>
-
-            <div class="about-content">
-
-                <div class="about-text">
-                    <h2>Heading</h2>
-
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed
-                        do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
+            <div class="service">
+                <div class="box-head">
+                    Service
                 </div>
-
-                <div class="performance">
-
-                    <h2>Performance</h2>
-
-                    <div class="wave">
-                        <div class="wave-top"></div>
-                        <div class="wave-bottom"></div>
+                <div class="konten-service">
+                    <div>
+                        <h1>Heading</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
                     </div>
-
+                    <div>
+                        <h1>Heading</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div>
+                        <h1>Heading</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
                 </div>
-
             </div>
-
-        </div>
-
-
-        <!-- CONTACT -->
-        <div class="contact">
-
-            <div class="section-button">
-                Contact
+             <div class="about">
+                <div class="box-head">
+                    About
+                </div>
+                <div style="font-size: 30px;padding-top: 50px;">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed
+                    do eiusmod
+                </div>
+                <div class="konten-about">
+                    <div>
+                        <h1>Heading</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div>
+                        <h1>Perfomance</h1>
+                        <div>
+                            <img src="ChatGPT Image Aug 21, 2026, 02_10_36 PM.png" alt="Nanti Grafik" style="width: 400px; height: 300px;">
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="contact-form">
-
-                <div class="input-row">
-                    <input type="text">
-                    <input type="text">
+            <div class="kontak">
+                <div>
+                    kontak
                 </div>
-
-                <div class="message">
-                    <textarea></textarea>
+                <div>
+                    <div>
+                        kotak1
+                    </div>
+                    <div>
+                        kotak2
+                    </div>
                 </div>
-
-                <div class="send">
-                    <button>Kirim</button>
+                <div>
+                    kotak dowo
                 </div>
-
+                <div>
+                    kirim
+                </div>
             </div>
-
         </div>
-
-
-        <!-- FOOTER -->
-        <div class="footer">
-            Footer
-        </div>
-
-    </div>
-
-</body>
+    </body>
 </html>
