@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>latjs01</title>
-
+        <title>Latihan Kalkulator</title>
     </head>
+
     <body>
         <h1>Latihan Java script 1</h1>
         <h2> Kalkulator Sederhana</h2>
@@ -11,31 +11,38 @@
         <p id="demo_hitung"></p>
 
         <script> 
-        
+            function kalkulator() 
+            {
+                let text,hasil;
+                let input1 = Number(prompt("Masukkan Nilai 1:"));
+                if (input1 == null)
+                {
+                    return;
+                } 
 
-            function kalkulator() {
-            let text,hasil;
-            let input1 = Number(prompt("Masukkan Nilai 1:"));
-            if (input1 == null){
-                return;} 
-            let input2 = Number(prompt("Masukkan Nilai 2:"));
-            if (input2 == null){
-                return;} 
-            // let angka1 = parseFloat(input1);
-            // let angka2 = parseFloat(input2);
-            let input3 = prompt("Masukkan Operator:(+,-,*,/)");
-            if (input3 == null){
-                return;} 
-            else {
-                if (input3 == "-"){ hasil = input1-input2 ;}
-                else if (input3 == "+"){ hasil = input1+input2 ;}
-                else if (input3 == "*"){ hasil = input1*input2 ;}
-                else if (input3 == "/"){ hasil = input1/input2 ;}
+                let input2 = Number(prompt("Masukkan Nilai 2:"));
+                if (input2 == null)
+                {
+                    return;
+                } 
+
+                // let angka1 = parseFloat(input1);
+                // let angka2 = parseFloat(input2);
+                let input3 = prompt("Masukkan Operator:(+,-,*,/)");
+                if (input3 == null)
+                {
+                    return;
+                } 
+                else 
+                {
+                    if (input3 == "-"){ hasil = input1-input2 ;}
+                    else if (input3 == "+"){ hasil = input1+input2 ;}
+                    else if (input3 == "*"){ hasil = input1*input2 ;}
+                    else if (input3 == "/"){ hasil = input1/input2 ;}
+                }
+
+                alert( " hasil dari " + input1+input3+input2+" = "+hasil)
             }
-            alert( " hasil dari " + input1+input3+input2+" = "+hasil)
-            }
-
-
 
         </script>
     </body>

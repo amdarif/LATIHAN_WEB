@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Latihan Java script 3</h1>
-<h2>Stopwatch</h2>
+    <head>
+        <title>Latihan Counting Real Time</title>
+    </head>
+    
+    <body>
+        <h1>Latihan Java script 3</h1>
+        <h2>Stopwatch</h2>
+        <h3 id="demo">0</h3>
+
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+
+        <script>
+            let timer;
+            let hitung = 0;
+
+            function start() 
+            {
+            clearInterval(timer);
+            tampilkan(hitung);
+
+            timer = setInterval(function() 
+            {
+                hitung++;
+                tampilkan(hitung);
+
+            }, 1000);
+            }
+
+            
+            function stop() 
+            {
+            clearInterval(timer);
+            tampilkan(hitung);
+            }
 
 
-
-<h3 id="demo">0</h3>
-
-<button onclick="start()">Start</button>
-<button onclick="stop()">Stop</button>
-<button onclick="reset()">Reset</button>
-
-<script>
-    let timer;
-    let hitung = 0;
-
-    function start() {
-    clearInterval(timer);
-    tampilkan(hitung);
-
-    timer = setInterval(function() {
-        hitung++;
-        tampilkan(hitung);
-
-    }, 1000);
-    }
-
-    function stop() {
-    clearInterval(timer);
-    tampilkan(hitung);}
+            function reset() 
+            {
+            clearInterval(timer);
+            hitung=0;
+            tampilkan(hitung);
+            }
 
 
-    function reset() {
-    clearInterval(timer);
-    hitung=0;
-    tampilkan(hitung);}
+            function tampilkan(text) 
+            {
+            let demo = document.getElementById("demo"); 
+            demo.innerHTML = text;
+            }
 
+        </script>    
 
-
-
-    // Function to display any text
-    function tampilkan(text) {
-    let demo = document.getElementById("demo"); 
-    demo.innerHTML = text;
-    }
-</script>    
-
-
-
-</body>
+    </body>
 </html>
