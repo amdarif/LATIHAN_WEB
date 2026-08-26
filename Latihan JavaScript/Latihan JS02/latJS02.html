@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Latihan Java script 2</h1>
+<h2>To-Do List</h2>
+
+<input id="kegiatan" placeholder="Kegiatan Baru">
+
+<button onclick="tbh_kgt()">Tambah</button>
+
+<ul id="list"></ul>
+
+<button onclick="Bersihkan()">Bersihkan</button>
+
+<script>
+
+let kegiatan = [];
+
+// Function to Display tasks
+function tmpl_kgt() {
+  let html = "";
+  for (let i = 0; i < kegiatan.length; i++) {
+    html += "<li>" + kegiatan[i] +  " <button onclick='hps_kgt(" + i + ")';> x</button></li>";}
+  document.getElementById("list").innerHTML = html;
+}
+
+// Function to Add a task
+function tbh_kgt() {
+  let inpt_kgt = document.getElementById("kegiatan");
+  let text = inpt_kgt.value;
+  if (text === "") {
+    return;
+  }
+  kegiatan.push(text);
+ inpt_kgt.value = "";
+  smpn_kgt();
+  tmpl_kgt();
+}
+
+// Function to Remove a task
+function hps_kgt(i) {
+  kegiatan.splice(i, 1);
+  smpn_kgt();
+  tmpl_kgt();
+}
+
+// Function to Clear all tasks
+function Bersihkan() {
+  kegiatan = [];
+  smpn_kgt();
+  tmpl_kgt();
+}
+
+// Function to Save tasks
+function smpn_kgt() {
+  localStorage.setItem("kegiatan", JSON.stringify(kegiatan));
+}
+
+// Function to Load tasks
+function muat_kgt() {
+  let simpan = localStorage.getItem("kegiatan");
+  if (simpan !== null) {
+    kegiatan = JSON.parse(simpan);
+  }
+}
+
+// Load and display tasks when page loads 
+muat_kgt();
+tmpl_kgt();
+</script>
+
+</body>
+</html>

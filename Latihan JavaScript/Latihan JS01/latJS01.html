@@ -5,47 +5,13 @@
 
     </head>
     <body>
-        <h1> Coba Alert</h1>
-        <button onclick="di_klik()" > Tampil_alert </button>
-        <h1> Confirm BOX</h1>
-        <button onclick="tak_klik()" > Tampil_confirm </button>
-        <p id="demo1"></p>
-        <h1> pROMPOT BOX</h1>
-        <button onclick="ke_klik()" > Tampil_Prompot </button>
-        <p id="demo2"></p>
-        <hr>
-        <hr>
-        <h1> Kalkulator Sederhana</h1>
+        <h1>Latihan Java script 1</h1>
+        <h2> Kalkulator Sederhana</h2>
         <button onclick="kalkulator()" > Hitung </button>
         <p id="demo_hitung"></p>
+
         <script> 
-            function di_klik(){
-                alert("halo bos");
-            }
-
-       
-            function tak_klik() {
-            var txt;
-            if (confirm("Press a button!")) {
-                txt = "You pressed OK!";
-            } else {
-                txt = "You pressed Cancel!";
-            }
-            document.getElementById("demo1").innerHTML = txt;
-            }
-
-
-            function ke_klik() {
-            let text1;
-            let person = prompt("Please enter your name:");
-            if (person == null || person == "") {
-                text1 = "User cancelled the prompt.";
-            } else {
-                text1 = "Hello " + person + "! How are you today?";
-            }
-            document.getElementById("demo2").innerHTML = text1;
-            }
-
+        
 
             function kalkulator() {
             let text,hasil;
@@ -66,7 +32,7 @@
                 else if (input3 == "*"){ hasil = input1*input2 ;}
                 else if (input3 == "/"){ hasil = input1/input2 ;}
             }
-            alert( hasil)
+            alert( " hasil dari " + input1+input3+input2+" = "+hasil)
             }
 
 
